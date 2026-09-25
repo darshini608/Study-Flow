@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "StudyFlow"
+description = "An accessibility-first study planning workspace that adapts to student constraints, helps learners focus, and turns progress into encouraging next steps."
+version = "1.0.0"
+id = "artifacts/studyflow"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18966
+
+[services.development]
+run = "pnpm --filter @workspace/studyflow run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/studyflow", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/studyflow/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18966"
+BASE_PATH = "/"

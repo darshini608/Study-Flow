@@ -1,0 +1,276 @@
+Build a complete, polished, hackathon-ready web application called StudyFlow.
+
+The goal of StudyFlow is to help students organize their studies, manage their time, stay focused, and understand their learning progress through an easy-to-use intelligent study platform.
+
+IMPORTANT
+
+I am not going to write the code myself. You should generate and implement the complete application for me. Make all necessary files, components, styling, database/storage logic, and functionality. Do not give me only sample code or a tutorial. Build the working application directly in this Replit project.
+
+1. DESIGN
+
+Create a modern, clean and attractive student-focused interface.
+
+The design should be:
+
+* Minimal and professional
+* Easy for college students to understand
+* Modern but not overly complicated
+* Fully responsive on both mobile and laptop
+* Smooth navigation
+* Clear buttons and readable typography
+* Use attractive cards, icons, progress indicators and subtle animations
+* Avoid making the interface look like a generic AI chatbot
+
+Use a consistent visual design throughout the application.
+
+2. LANDING PAGE
+
+Create a landing page containing:
+
+* StudyFlow logo/name
+* Short tagline explaining the platform
+* Brief explanation of how StudyFlow helps students
+* “Get Started” button
+* Feature highlights
+* A simple explanation of the StudyFlow workflow
+* Modern footer
+
+The main call-to-action should take the user into the application.
+
+3. STUDENT DASHBOARD
+
+Create a dashboard showing:
+
+* Welcome message
+* Today’s study plan
+* Upcoming tasks
+* Progress for the day
+* Overall study progress
+* Subjects
+* Pending assignments
+* Upcoming deadlines
+* Study streak
+* Quick-start study session button
+
+Use visual progress bars/cards so students can understand their progress quickly.
+
+4. STUDY PLANNER
+
+Allow students to create and manage their study plans.
+
+Students should be able to enter:
+
+* Subject
+* Topic
+* Task
+* Priority
+* Estimated study time
+* Deadline
+* Status
+
+Allow users to:
+
+* Add tasks
+* Edit tasks
+* Delete tasks
+* Mark tasks as completed
+* Filter tasks
+* Sort tasks by priority/deadline
+* View today’s tasks
+
+Create a useful daily and weekly study-planning interface.
+
+5. AI STUDY ASSISTANT
+
+Add an AI-powered study assistant.
+
+The assistant should help students with:
+
+* Creating study plans
+* Breaking large topics into smaller tasks
+* Explaining difficult concepts
+* Generating revision strategies
+* Suggesting what to study next
+* Creating simple summaries
+* Answering study-related questions
+
+Make the AI assistant feel integrated into StudyFlow rather than simply being a separate chatbot.
+
+If an external AI API key is required, structure the application so it can be connected through Replit Secrets/environment variables. Also provide a sensible fallback/demo mode so the application remains usable during the hackathon if no API key is available.
+
+6. FOCUS / STUDY SESSION
+
+Create a focus mode with a study timer.
+
+Include:
+
+* Pomodoro-style timer
+* Start
+* Pause
+* Resume
+* Reset
+* Short break
+* Long break
+* Current task/subject
+* Session completion
+
+After completing a session, update the student’s study statistics.
+
+7. PROGRESS TRACKING
+
+Create a progress section showing:
+
+* Tasks completed
+* Study sessions completed
+* Study time
+* Subject-wise progress
+* Weekly progress
+* Study streak
+
+Use simple charts/visualizations where appropriate.
+
+The progress information should update dynamically when the student completes tasks or study sessions.
+
+8. SMART RECOMMENDATIONS
+
+Create a section called Smart Study Insights.
+
+Based on the student’s tasks, deadlines and progress, provide useful recommendations such as:
+
+* What to study next
+* Which deadline needs attention
+* Which subject needs more revision
+* Suggested study duration
+* Suggested break
+* Daily study goal
+
+For the hackathon demo, these recommendations can use rule-based logic if an AI API is unavailable.
+
+9. SUBJECTS
+
+Create a subjects section where students can:
+
+* Add subjects
+* View topics/tasks for each subject
+* Track subject progress
+* Set study goals
+
+Display each subject with a visual progress indicator.
+
+10. NOTIFICATIONS / REMINDERS
+
+Create a simple reminder system for:
+
+* Upcoming deadlines
+* Planned study sessions
+* Incomplete tasks
+* Study goals
+
+Use browser-friendly notifications where possible, while ensuring the application still works without notification permissions.
+
+11. USER DATA
+
+Create appropriate data storage so that tasks, subjects, study sessions and progress are not lost when navigating between pages.
+
+Use a simple database or Replit-supported storage solution.
+
+Structure the application so user data can later be connected to proper authentication.
+
+For the hackathon demo, make the setup simple and reliable.
+
+12. NAVIGATION
+
+Create a sidebar or responsive navigation bar containing:
+
+* Dashboard
+* Study Planner
+* Subjects
+* Focus Mode
+* AI Study Assistant
+* Progress
+* Smart Insights
+* Settings
+
+Make navigation work properly without unnecessary page reloads where possible.
+
+13. SETTINGS
+
+Add a basic settings page with:
+
+* Student name
+* Daily study goal
+* Preferred study session length
+* Break duration
+* Theme preference
+* Reset demo data
+
+14. DEMO DATA
+
+Include realistic sample student data so that the application looks complete immediately when opened.
+
+For example:
+
+Subjects:
+
+* Engineering Mathematics
+* Data Science
+* Electronics
+* Programming
+
+Include sample tasks, deadlines and study sessions.
+
+Clearly structure the demo data so it can easily be replaced with real user data.
+
+15. TECHNICAL REQUIREMENTS
+
+Choose a reliable modern technology stack that works well inside Replit.
+
+Prioritize:
+
+* Fast development
+* Reliability
+* Responsive design
+* Clean component structure
+* Maintainable code
+* Secure handling of API keys
+* No unnecessary dependencies
+
+Make sure all buttons, navigation, forms, timers, charts and interactions actually work.
+
+Do not leave placeholder buttons that do nothing.
+
+16. HACKATHON PRESENTATION
+
+The application should look sufficiently polished to demonstrate to judges.
+
+The main user flow should be:
+
+Landing Page
+→ Get Started
+→ Dashboard
+→ Create/View Study Plan
+→ Start Focus Session
+→ Complete Task
+→ Progress Updates
+→ Smart Study Insights
+
+Make this flow easy to demonstrate within a few minutes.
+
+17. FINAL CHECK
+
+After building the application:
+
+* Run the project
+* Check for errors
+* Fix broken imports
+* Fix UI issues
+* Test navigation
+* Test task creation/editing/deletion
+* Test timer
+* Test progress updates
+* Test responsive layout
+* Make sure the application starts correctly in Replit
+
+Do not stop after generating the initial code. Continue fixing issues until the application is functional and demo-ready.
+
+Build the complete StudyFlow application now.

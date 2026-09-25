@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+  --font-mono: var(--app-font-mono);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 42 45% 96%;
+  --foreground: 198 31% 18%;
+  --border: 38 27% 86%;
+  --input: 38 27% 82%;
+  --ring: 173 47% 35%;
+  --card: 42 50% 99%;
+  --card-foreground: 198 31% 18%;
+  --card-border: 38 27% 86%;
+  --popover: 42 50% 99%;
+  --popover-foreground: 198 31% 18%;
+  --popover-border: 38 27% 86%;
+  --primary: 173 47% 32%;
+  --primary-foreground: 43 45% 97%;
+  --secondary: 38 56% 90%;
+  --secondary-foreground: 198 31% 22%;
+  --muted: 39 30% 92%;
+  --muted-foreground: 198 14% 43%;
+  --accent: 11 66% 61%;
+  --accent-foreground: 28 45% 15%;
+  --destructive: 4 60% 48%;
+  --destructive-foreground: 43 45% 97%;
+  --app-font-sans: 'Manrope', ui-sans-serif, sans-serif;
+  --app-font-serif: 'Newsreader', Georgia, serif;
+  --app-font-mono: 'DM Mono', ui-monospace, monospace;
+  --radius: 1rem;
+  --shadow-sm: 0 2px 8px rgba(35, 57, 54, .06);
+  --shadow-md: 0 12px 30px rgba(35, 57, 54, .09);
+}
+
+.dark {
+  --background: 198 29% 13%;
+  --foreground: 42 45% 94%;
+  --border: 198 18% 27%;
+  --input: 198 18% 30%;
+  --ring: 168 46% 53%;
+  --card: 198 25% 17%;
+  --card-foreground: 42 45% 94%;
+  --card-border: 198 18% 27%;
+  --popover: 198 25% 17%;
+  --popover-foreground: 42 45% 94%;
+  --popover-border: 198 18% 27%;
+  --primary: 168 46% 53%;
+  --primary-foreground: 198 31% 12%;
+  --secondary: 198 20% 24%;
+  --secondary-foreground: 42 45% 94%;
+  --muted: 198 20% 22%;
+  --muted-foreground: 42 16% 70%;
+  --accent: 11 70% 66%;
+  --accent-foreground: 198 31% 12%;
+  --destructive: 4 70% 61%;
+  --destructive-foreground: 198 31% 12%;
+}
+
+* { box-sizing: border-box; }
+html { background: hsl(var(--background)); }
+body {
+  margin: 0;
+  font-family: var(--app-font-sans);
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-width: 320px;
+}
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { outline-color: hsl(var(--ring)); outline-offset: 3px; }
+button { cursor: pointer; }
+::selection { background: hsl(var(--accent) / .38); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes soft-in { from { opacity: 0; } to { opacity: 1; } }
+.animate-rise { animation: rise .55s ease-out both; }
+.animate-soft-in { animation: soft-in .4s ease-out both; }
+.delay-1 { animation-delay: 80ms; }
+.delay-2 { animation-delay: 160ms; }
+.delay-3 { animation-delay: 240ms; }
+.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+.high-contrast { --foreground: 198 40% 8%; --muted-foreground: 198 30% 24%; --border: 198 20% 58%; }
+.dark.high-contrast { --foreground: 42 55% 99%; --muted-foreground: 42 30% 88%; --border: 198 16% 54%; }
+
+@media (max-width: 767px) {
+  .mobile-scroll { overflow-x: auto; }
+}
